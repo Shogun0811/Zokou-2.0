@@ -10,7 +10,7 @@ const DATABASE_URL = process.env.DATABASE_URL === undefined
 module.exports = { session: process.env.SESSION_ID || 'zokk',
      ETAT:process.env.ETAT,
     PREFIXE: process.env.PREFIXE,
-    NOM_OWNER: process.env.NOM_OWNER || "Zokou-Md",
+    NOM_OWNER: process.env.NOM_OWNER || "BICOM LAB",
     NUMERO_OWNER : process.env.NUMERO_OWNER,              
     LECTURE_AUTO_STATUS: process.env.LECTURE_AUTO_STATUS || "non",
     TELECHARGER_AUTO_STATUS: process.env.TELECHARGER_AUTO_STATUS || 'non',
@@ -26,7 +26,7 @@ module.exports = { session: process.env.SESSION_ID || 'zokk',
     ATD : process.env.ANTI_DELETE_MESSAGE || 'non',            
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
-        ? "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9" : "postgres://db_7xp9_user:6hwmTN7rGPNsjlBEHyX49CXwrG7cDeYi@dpg-cj7ldu5jeehc73b2p7g0-a.oregon-postgres.render.com/db_7xp9",
+        ? "postgresql://cromoo_user:ewpKEGP7nX0sdpOdCeP50CG2MfDyyCcr@dpg-cqmfk888fa8c73ci8keg-a/cromoo" : "postgresql://cromoo_user:ewpKEGP7nX0sdpOdCeP50CG2MfDyyCcr@dpg-cqmfk888fa8c73ci8keg-a.oregon-postgres.render.com/cromoo",
     /* new Sequelize({
      dialect: 'sqlite',
      storage: DATABASE_URL,
